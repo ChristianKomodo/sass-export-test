@@ -38,7 +38,7 @@ Likewise, only classes defined in mixins that were actually used were present in
 
 This also means that importing Sass mixin or variable files individually, or importing an "index" file which in turn imports several other Sass files, have no impact on the final CSS when the application is built.
 
-### References
+## References
 
 #### Sass Style Guide
 https://sass-guidelin.es/#architecture
