@@ -17,7 +17,8 @@ In app.component.scss, we only actually use one of the variables in a defined cl
 ```
 
 A color value was defined inside a mixin that was never used in order to determine if unused mixins made it into the final build:
-```@mixin font-size($size) {
+```
+@mixin font-size($size) {
   font-size: $size;
 	font-size: calculateRem($size);
 	color: #334455;  <--- color value to check for in final build
