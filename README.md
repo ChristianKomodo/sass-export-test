@@ -32,7 +32,7 @@ A color value was defined inside a mixin that was never used in order to determi
 
 When observing the packages and files exported from `ng build` and `ng build --prod=true`, in both cases only the color value from `$variable-used` existed in the CSS of the final application build in the `/dist` folder.  The color from the `$variable-unused` was not exported and was not found in any files in the build.
 
-Likewise, only classes defined in mixins that were actually used were present in the final build files in the application.  Unused mixins were not exported.  The color defined in the unused mixin was not found in the final build files.
+Likewise, only classes defined in mixins that were actually used were present in the final build.  Unused mixins were not exported.  The color defined in the unused mixin was not found in the final build files.
 
 **Therefore you can import as many Sass mixins and variables as you wish in any number of imported files and not affect the file size of the CSS in the final application.**
 
