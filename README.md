@@ -12,7 +12,7 @@ $variable-unused: #0E6E6E;
 In app.component.scss, we only actually use one of the variables in a defined class:
 ```
 .class-used {
-	color: $variable-used;
+  color: $variable-used;
 }
 ```
 
@@ -20,8 +20,8 @@ A color value was defined inside a mixin that was never used in order to determi
 ```
 @mixin font-size($size) {
   font-size: $size;
-	font-size: calculateRem($size);
-	color: #334455;  <--- color value to check for in final build
+  font-size: calculateRem($size);
+  color: #334455;  <--- color value to check for in final build
 }
 ```
 
