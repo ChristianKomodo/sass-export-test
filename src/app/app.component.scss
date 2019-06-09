@@ -1,0 +1,6 @@
+@import 'mixins/index';
+@import 'variables/index';
+
+.class-used {
+	color: $variable-used;
+}
