@@ -4,7 +4,7 @@
 A discussion arose as to whether unused Sass mixins and variables from imported files actually make it into the build, increasing the file size of the final build.  The [Sass documentation](https://sass-lang.com/documentation/at-rules/import#partials) states that those "Partials" do not compile on their own (see below) but I decided to conduct an experiment anyway.
 
 > ### Partials
-As a convention, Sass files that are only meant to be imported, not compiled on their own, begin with _ (as in _code.scss). These are called partials, and they tell Sass tools not to try to compile those files on their own. You can leave off the _ when importing a partial.
+> As a convention, Sass files that are only meant to be imported, not compiled on their own, begin with _ (as in _code.scss). These are called partials, and they tell Sass tools not to try to compile those files on their own. You can leave off the _ when importing a partial.
 
 But let's see for ourselves.  For this test, two color variables were defined in `src/sass/variables/_colors.scss`:
 ```
